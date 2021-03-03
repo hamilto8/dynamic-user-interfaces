@@ -3,8 +3,35 @@ html, body {
     width: 100%;
     margin: 0;
     padding: none;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blueviolet;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+#content{
+    margin-top: 1.8em;
 }
 
 .header {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blueviolet;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
