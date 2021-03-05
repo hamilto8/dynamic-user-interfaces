@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-user-interfaces",
+  "version": "1.0.0",
+  "description": "A project to experiment to with dynamic user interfaces as part of the Odin Project curriculum.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamilto8/dynamic-user-interfaces.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamilto8/dynamic-user-interfaces/issues"
+  },
+  "homepage": "https://github.com/hamilto8/dynamic-user-interfaces#readme",
+  "devDependencies": {
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}

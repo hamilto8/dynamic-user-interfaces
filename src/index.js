@@ -1,4 +1,4 @@
-// import mainPage from './mainPage';
+import mainPage from './mainPage';
 
 const contentDiv = document.querySelector('#content');
 const homeTab = document.querySelector('.home-tab');
@@ -21,4 +21,4 @@ function showAbout()  {
     console.log('Showing about...');
 };
 
-// document.onload = contentDiv.appendChild(mainPage());
+document.onload = contentDiv.appendChild(mainPage());
