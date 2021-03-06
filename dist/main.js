@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/imageGallery.js":
+/*!*****************************!*\
+  !*** ./src/imageGallery.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst imageGallery = () => {\r\n    const galleryDiv = document.createElement('div');\r\n        galleryDiv.classList.add('image-gallery');\r\n        galleryDiv.innerHTML = `\r\n        <p>Images Go Here</p>\r\n        `;\r\n    return galleryDiv\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imageGallery);\n\n//# sourceURL=webpack://dynamic-user-interfaces/./src/imageGallery.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPage */ \"./src/mainPage.js\");\n\r\n\r\nconst contentDiv = document.querySelector('#content');\r\nconst homeTab = document.querySelector('.home-tab');\r\nconst blogTab = document.querySelector('.blog-tab');\r\nconst aboutTab = document.querySelector('.about-tab');\r\n\r\nhomeTab.addEventListener('click', showHome);\r\naboutTab.addEventListener('click', showAbout);\r\nblogTab.addEventListener('click', showBlog);\r\n\r\nfunction showHome() {\r\n    console.log(\"Showing home...\");\r\n};\r\n\r\nfunction showBlog() {\r\n    console.log('Showing blog...');\r\n};\r\n\r\nfunction showAbout()  {\r\n    console.log('Showing about...');\r\n};\r\n\r\ndocument.onload = contentDiv.appendChild((0,_mainPage__WEBPACK_IMPORTED_MODULE_0__.default)());\n\n//# sourceURL=webpack://dynamic-user-interfaces/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPage */ \"./src/mainPage.js\");\n/* harmony import */ var _imageGallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageGallery */ \"./src/imageGallery.js\");\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content');\r\nconst homeTab = document.querySelector('.home-tab');\r\nconst blogTab = document.querySelector('.blog-tab');\r\nconst aboutTab = document.querySelector('.about-tab');\r\nconst galleryLink = document.querySelector('.gallery-link');\r\n\r\nhomeTab.addEventListener('click', showHome);\r\naboutTab.addEventListener('click', showAbout);\r\nblogTab.addEventListener('click', showBlog);\r\ngalleryLink.addEventListener('click', showGallery);\r\n\r\nfunction showHome() {\r\n    console.log(\"Showing home...\");\r\n};\r\n\r\nfunction showBlog() {\r\n    console.log('Showing blog...');\r\n};\r\n\r\nfunction showAbout()  {\r\n    console.log('Showing about...');\r\n};\r\n\r\nfunction showGallery() {\r\n    const mainPage = contentDiv.querySelector('.main-page');\r\n    contentDiv.removeChild(mainPage);\r\n    contentDiv.appendChild((0,_imageGallery__WEBPACK_IMPORTED_MODULE_1__.default)());\r\n}\r\n\r\ndocument.onload = contentDiv.appendChild((0,_mainPage__WEBPACK_IMPORTED_MODULE_0__.default)());\n\n//# sourceURL=webpack://dynamic-user-interfaces/./src/index.js?");
 
 /***/ }),
 
