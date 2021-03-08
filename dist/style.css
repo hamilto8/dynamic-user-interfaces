@@ -20,6 +20,10 @@ html, body {
         padding-bottom: 5px;
     }
 
+    .mobile-nav {
+        display: none;
+    }
+
     #content{
         margin-top: 1.8em;
     }
@@ -83,8 +87,12 @@ html, body {
         margin: 0;
         top: 0;
     }
-
+    
     .navbar {
+        display: none;
+    }
+
+    .mobile-nav {
         display: flex;
         position: fixed;
         bottom: 0;

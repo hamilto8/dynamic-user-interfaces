@@ -16,7 +16,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst imageGallery = () => {\r\n    const galleryDiv = document.createElement('div');\r\n        galleryDiv.classList.add('image-gallery');\r\n        galleryDiv.innerHTML = `\r\n        <p>Images Go Here</p>\r\n        `;\r\n    return galleryDiv\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imageGallery);\n\n//# sourceURL=webpack://dynamic-user-interfaces/./src/imageGallery.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst imageGallery = () => {\r\n    const galleryDiv = document.createElement('div');\r\n        galleryDiv.classList.add('image-gallery');\r\n        galleryDiv.innerHTML = `\r\n        <i class=\"far fa-images\"></i>\r\n        <p>Images Go Here</p>\r\n        `;\r\n    return galleryDiv\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (imageGallery);\n\n//# sourceURL=webpack://dynamic-user-interfaces/./src/imageGallery.js?");
 
 /***/ }),
 
