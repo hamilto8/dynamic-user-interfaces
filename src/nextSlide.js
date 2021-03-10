@@ -1,6 +1,11 @@
 const showNextSlide = (e) => {
+    const contentDiv = document.querySelector('#content');
+    const pictureDiv = contentDiv.querySelector('.picture-div');
+    const imgArr = ['apple', 'clock', 'computer'];
     console.log('Showing next slide...');
     const target = e.target;
+
+    pictureDiv.innerHTML = `<img src="./img/${imgArr[1]}.jpeg"/>`
 
     target.style.color = 'red';
     setTimeout(() => {

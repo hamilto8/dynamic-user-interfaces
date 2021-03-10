@@ -1,6 +1,7 @@
 import {showNextSlide, showPreviousSlide} from './nextSlide';
 
 const imageGallery = () => {
+    const imgArr = ['apple', 'clock', 'computer'];
     const galleryDiv = document.createElement('div');
         galleryDiv.classList.add('image-gallery');
 
@@ -13,7 +14,7 @@ const imageGallery = () => {
     const pictureDiv = document.createElement('div');
         pictureDiv.classList.add('picture-div');
 
-        pictureDiv.innerHTML = `<img src="./img/apple.jpeg"/>`
+        pictureDiv.innerHTML = `<img data-index="0" src="./img/${imgArr[0]}.jpeg"/>`
 
     const controlPanel = document.createElement('div');
         controlPanel.classList.add('control-panel');
