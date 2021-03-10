@@ -79,7 +79,40 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.logo-image {
+    font-size: 3em;
+}
 
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.picture-div  {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(99, 99, 104);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.picture-div img {
+    width: 80%;
+    height: 80%;
+}
+
+.control-panel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.control-panel * {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 @media screen and (max-width: 525px) {
     body {

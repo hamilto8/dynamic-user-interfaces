@@ -1,6 +1,6 @@
 import mainPage from './mainPage';
 import imageGallery from './imageGallery';
-import showNextSlide from './nextSlide';
+import {showNextSlide, showPreviousSlide} from './nextSlide';
 
 const contentDiv = document.querySelector('#content');
 const homeTab = document.querySelector('.home-tab');
