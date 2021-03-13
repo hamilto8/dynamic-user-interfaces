@@ -6,6 +6,21 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+.image-carousel {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.preview-image {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.preview-image img:hover {
+    border: 2px solid orange;
+}
+
 @media screen and (min-width: 510px) {
 
     .navbar {
@@ -92,15 +107,16 @@ html, body {
     display: flex;
     width: 300px;
     height: 300px;
-    background-color: rgb(99, 99, 104);
+    background-color: rgb(194, 194, 194);
+    border: 2px solid rgb(102, 102, 102);
     justify-content: center;
     align-items: center;
     
 }
 
 .picture-div img {
-    width: 80%;
-    height: 80%;
+    width: 250px;
+    height: auto;
 }
 
 .control-panel {
@@ -136,6 +152,16 @@ html, body {
         color: #fff;
         padding-top: 10px;
         padding-bottom: 5px;
+    }
+
+    .mobile-nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:hover {
+        color: orange;
     }
 
     #content{

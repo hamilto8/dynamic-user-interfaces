@@ -21,6 +21,22 @@ const imageGallery = () => {
 
         pictureDiv.appendChild(image);
 
+    const carousel = document.createElement('div');
+        carousel.classList.add('image-carousel');
+
+        imgArr.forEach((img, idx)=>{
+            const previewImgDiv = document.createElement('div');
+            const previewImg = document.createElement('img');
+                previewImg.src = `./img/${img}.jpeg`;
+                previewImgDiv.classList.add('preview-image');
+                previewImgDiv.dataset.index = idx;
+                previewImg.style.width = '30px';
+                previewImg.style.height = 'auto';
+
+            previewImgDiv.appendChild(previewImg);
+            carousel.appendChild(previewImgDiv);
+        });
+
     const controlPanel = document.createElement('div');
         controlPanel.classList.add('control-panel');
         
@@ -42,6 +58,7 @@ const imageGallery = () => {
         controlPanel.appendChild(rightArrow);
 
         galleryDiv.appendChild(pictureDiv);
+        galleryDiv.appendChild(carousel);
         galleryDiv.appendChild(controlPanel);
 
     return galleryDiv
