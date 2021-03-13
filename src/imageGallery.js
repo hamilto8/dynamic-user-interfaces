@@ -1,4 +1,4 @@
-import {showNextSlide, showPreviousSlide} from './nextSlide';
+import {showNextSlide, showPreviousSlide, skipToImage} from './nextSlide';
 import imgArr from './imageArr';
 
 const imageGallery = () => {
@@ -32,6 +32,7 @@ const imageGallery = () => {
                 previewImgDiv.dataset.index = idx;
                 previewImg.style.width = '30px';
                 previewImg.style.height = 'auto';
+                previewImg.addEventListener('click', skipToImage);
 
             previewImgDiv.appendChild(previewImg);
             carousel.appendChild(previewImgDiv);

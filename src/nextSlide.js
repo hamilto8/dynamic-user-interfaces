@@ -62,4 +62,19 @@ const showPreviousSlide = (e) =>{
     }, 200);
 }
 
-export {showNextSlide, showPreviousSlide}
+const skipToImage = (e) => {
+    const contentDiv = document.querySelector('#content');
+    const pictureDiv = contentDiv.querySelector('.picture-div');
+    const currentImage = pictureDiv.querySelector('img');
+    const imageIdx = parseInt(e.target.parentElement.dataset.index);
+
+    const skippedImage = document.createElement('img');
+        skippedImage.src = `./img/${imgArr[imageIdx]}.jpeg`;
+
+        pictureDiv.removeChild(currentImage);
+        pictureDiv.dataset.index = imageIdx;
+        pictureDiv.appendChild(skippedImage);
+    
+}
+
+export {showNextSlide, showPreviousSlide, skipToImage}
